@@ -2,6 +2,7 @@
 #define RIME_PREDICT_TRANSLATOR_H_
 
 #include <rime/translator.h>
+#include "predict_engine.h"
 
 namespace rime {
 
