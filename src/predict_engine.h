@@ -4,6 +4,7 @@
 #include "predict_db.h"
 #include <rime/component.h>
 #include <rime/dict/db_pool.h>
+#include <rime_api.h>
 
 namespace rime {
 
@@ -12,7 +13,7 @@ class Segment;
 class Ticket;
 class Translation;
 
-class PredictEngine : public Class<PredictEngine, const Ticket&> {
+RIME_API class PredictEngine : public Class<PredictEngine, const Ticket&> {
  public:
   PredictEngine(an<PredictDb> db, int max_iterations, int max_candidates);
   virtual ~PredictEngine();
